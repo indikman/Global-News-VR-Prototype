@@ -197,7 +197,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.management": {
-      "version": "4.2.0",
+      "version": "4.2.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -210,7 +210,7 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.xr.oculus": {
-      "version": "3.0.0",
+      "version": "3.0.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
