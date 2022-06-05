@@ -22,6 +22,8 @@ public class NewsItemsTest : MonoBehaviour
 
             item.GetComponent<ToolipPositioner>().SetTooltip(tooltip.transform);
 
+            //setup the news item
+            item.GetComponent<NewsOpener>().SetNews(newsitem.title, newsitem.description);
             
         }
     }
@@ -37,6 +39,7 @@ public class NewsItemsTest : MonoBehaviour
 class NewsItem
 {
     public string title;
+    [TextArea(15, 20)]
     public string description;
     public float lat, lon;
 }

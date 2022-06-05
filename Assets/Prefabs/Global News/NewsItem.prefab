@@ -96,6 +96,7 @@ GameObject:
   - component: {fileID: 6601029073412405828}
   - component: {fileID: 6601029073412405831}
   - component: {fileID: 6601029073412405830}
+  - component: {fileID: 7351215867042240060}
   m_Layer: 0
   m_Name: NewsItem
   m_TagString: Untagged
@@ -179,7 +180,19 @@ MonoBehaviour:
       m_Calls: []
   m_Activated:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7351215867042240060}
+        m_TargetAssemblyTypeName: NewsOpener, Assembly-CSharp
+        m_MethodName: OpenNews
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   m_Deactivated:
     m_PersistentCalls:
       m_Calls: []
@@ -240,3 +253,15 @@ MonoBehaviour:
   offsetLength: 0.1
   offset: {x: 0, y: 0, z: 0}
   tooltipRef: {fileID: 0}
+--- !u!114 &7351215867042240060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6601029073412405825}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b39e6fb13bd1804e87166396d9c8815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
