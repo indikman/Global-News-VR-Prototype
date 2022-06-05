@@ -12,6 +12,7 @@ public class NewsTablet : MonoBehaviour
     [SerializeField] private TMP_Text txtDescription;
     [SerializeField] private ScrollRect scrollViewDescription;
     [SerializeField] private float distaceFromFace = 0.5f;
+    [SerializeField] private Vector3 distanceOffset;
 
     Transform mainCam;
 
@@ -38,16 +39,14 @@ public class NewsTablet : MonoBehaviour
         txtDescription.SetText(description);
         scrollViewDescription.verticalNormalizedPosition = 1;
 
-        Debug.Log(description);
-
         //Get the camera position and place 50 cm in front of the face
-        transform.position = mainCam.position + mainCam.forward.normalized * distaceFromFace;
+        transform.position = mainCam.position + distanceOffset + mainCam.forward.normalized * distaceFromFace;
         transform.LookAt(mainCam);
     }
 
     public void Close()
     {
-        // Will just sent it off screen =D
+        // Will just send it off screen =D
         transform.position = Vector3.one * 10000;
     }
 

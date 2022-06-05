@@ -57,9 +57,11 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _x_Offset: 19.5
     m_Colors:
     - _FrenelColor: {r: 0, g: 2.6352942, b: 11.984314, a: 1}
     - _MainColor: {r: 0, g: 2.1183286, b: 8.574187, a: 1}
+    - _Main_Offset: {r: -0.27, g: 0, b: 0, a: 0}
     - _Speed: {r: 0, g: 2, b: 0, a: 0}
     - _Tiling: {r: 1, g: 200, b: 0, a: 0}
   m_BuildTextureStacks: []

@@ -15,9 +15,9 @@ public class EarthPositionLocator : MonoBehaviour
 
     Vector3 fixScale;
 
-    void Start()
+    private void Start()
     {
-        
+        //SetPosition(0, 0);
     }
 
     public void SetPosition(float lat, float lon)
@@ -39,7 +39,7 @@ public class EarthPositionLocator : MonoBehaviour
         radius = sphereCollider.radius;
 
         _lat = Mathf.Clamp(lat, -90.0f, 90.0f) * Mathf.Deg2Rad;
-        _lon = Mathf.Clamp(lon, -180.0f, 180.0f) * Mathf.Deg2Rad;
+        _lon = -Mathf.Clamp(lon, -180.0f, 180.0f) * Mathf.Deg2Rad;
 
         transform.localPosition = new Vector3(
                 radius * Mathf.Sin(_lon) * Mathf.Cos(_lat),
