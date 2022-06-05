@@ -1,7 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
+using DG.Tweening;
 
 public class ObjectManipulatorInteractable : XRSimpleInteractable
 {
@@ -110,7 +109,12 @@ public class ObjectManipulatorInteractable : XRSimpleInteractable
 
         //Reset scale if smaller than start
         if (transform.localScale.magnitude < startScale.magnitude)
+        {
             transform.localScale = startScale;
+            transform.DOScale(transform.localScale / 2, 1.0f).From().SetEase(Ease.OutElastic);
+            SFXPlayer.GetInstance().PlaySound("pop");
+        }
+            
 
         // Allow scaling again
         scaleStart = true;

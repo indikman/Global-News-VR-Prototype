@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using DG.Tweening;
 
 public class NewsTablet : MonoBehaviour
 {
@@ -40,14 +41,24 @@ public class NewsTablet : MonoBehaviour
         scrollViewDescription.verticalNormalizedPosition = 1;
 
         //Get the camera position and place 50 cm in front of the face
+
+        
+        SFXPlayer.GetInstance().PlaySound("pop");
         transform.position = mainCam.position + distanceOffset + mainCam.forward.normalized * distaceFromFace;
+        transform.localScale = Vector3.one;
+        transform.DOScale(transform.localScale / 2, 1.0f).From().SetEase(Ease.OutElastic);
+
+
         transform.LookAt(mainCam);
     }
 
     public void Close()
     {
         // Will just send it off screen =D
-        transform.position = Vector3.one * 10000;
+        transform.position = Vector3.one * 10000; 
+        SFXPlayer.GetInstance().PlaySound("error");
     }
 
 }
+
+

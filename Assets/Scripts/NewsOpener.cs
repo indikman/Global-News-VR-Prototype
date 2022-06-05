@@ -16,5 +16,6 @@ public class NewsOpener : MonoBehaviour
     public void OpenNews()
     {
         NewsTablet.GetInstance().SetNews(title, description);
+        SFXPlayer.GetInstance().PlaySound("tip");
     }
 }

@@ -53,7 +53,7 @@ Material:
         m_Scale: {x: 5, y: 5}
         m_Offset: {x: 0, y: 0}
     - _Main_Texture:
-        m_Texture: {fileID: 2800000, guid: 68810486a4b7b754b8061d6d81413bf3, type: 3}
+        m_Texture: {fileID: 2800000, guid: f727de71618007248985de9636f1f343, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
@@ -113,12 +113,14 @@ Material:
     - _Surface: 0
     - _WorkflowMode: 1
     - _ZWrite: 1
+    - _x_Offset: 0
     m_Colors:
     - _BaseColor: {r: 0.4009434, g: 0.83087546, b: 1, a: 1}
     - _Color: {r: 0.40094337, g: 0.83087546, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _FrenelColor: {r: 0.990566, g: 0.4097168, b: 0, a: 0}
-    - _MainColor: {r: 0.4716981, g: 0.15933757, b: 0.14017443, a: 0}
+    - _FrenelColor: {r: 0.9102893, g: 0.37650713, b: 0, a: 0}
+    - _MainColor: {r: 0.3090873, g: 0.10699176, b: 0.09213179, a: 0}
+    - _Main_Offset: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _Speed: {r: 0, g: 0.3, b: 0, a: 0}
     - _Tiling: {r: 1, g: 200, b: 0, a: 0}
