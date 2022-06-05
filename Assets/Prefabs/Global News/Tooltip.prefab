@@ -25,7 +25,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7213322636200796760}
-  m_LocalRotation: {x: -0, y: 0.47374225, z: -0, w: 0.8806635}
+  m_LocalRotation: {x: 0, y: 0.4737424, z: 0, w: 0.88066345}
   m_LocalPosition: {x: -0.28429183, y: 0.83857524, z: 0.61818695}
   m_LocalScale: {x: 0.009591944, y: 0.009591945, z: 0.009591944}
   m_ConstrainProportionsScale: 0
@@ -34,7 +34,7 @@ Transform:
   - {fileID: 7213322636772278872}
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 100.057, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 56.555, z: 0}
 --- !u!120 &7213322636200796762
 LineRenderer:
   m_ObjectHideFlags: 0
@@ -127,7 +127,7 @@ LineRenderer:
       m_NumColorKeys: 2
       m_NumAlphaKeys: 2
     numCornerVertices: 0
-    numCapVertices: 0
+    numCapVertices: 4
     alignment: 0
     textureMode: 0
     shadowBias: 0.5
@@ -159,7 +159,6 @@ GameObject:
   - component: {fileID: 7213322636772278872}
   - component: {fileID: 7213322636772278877}
   - component: {fileID: 7213322636772278874}
-  - component: {fileID: 7213322636772278875}
   m_Layer: 0
   m_Name: Background
   m_TagString: Untagged
@@ -174,14 +173,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7213322636772278873}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0.65000296, y: 1.0299966, z: 0}
   m_LocalScale: {x: 8.698502, y: 2.0615003, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7213322636200796763}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
 --- !u!33 &7213322636772278877
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -232,20 +231,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7213322636772278875
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7213322636772278873}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &7213322637123120530
 GameObject:
   m_ObjectHideFlags: 0
@@ -271,18 +256,18 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7213322637123120530}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -0.1}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.07}
   m_LocalScale: {x: 0.25754, y: 0.25754, z: 0.25754}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7213322636200796763}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.62, y: 1.0429966}
-  m_SizeDelta: {x: 30.337, y: 6.781}
+  m_AnchoredPosition: {x: 0.614, y: 1.0429966}
+  m_SizeDelta: {x: 32.261, y: 6.781}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!23 &7213322637123120535
 MeshRenderer:
@@ -346,7 +331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Sample News Item
+  m_text: Sample News Item Sample News Item Sample News Item
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8c8afdbab4d52b844b581427473c1b17, type: 2}
   m_sharedMaterial: {fileID: -8584500714535920557, guid: 8c8afdbab4d52b844b581427473c1b17, type: 2}
@@ -373,8 +358,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 34.84
-  m_fontSizeBase: 34.84
+  m_fontSize: 25
+  m_fontSizeBase: 25
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -385,7 +370,7 @@ MonoBehaviour:
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_wordSpacing: 0
-  m_lineSpacing: 0
+  m_lineSpacing: -0.2
   m_lineSpacingMax: 0
   m_paragraphSpacing: 0
   m_charWidthMaxAdj: 0
