@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class ObjectManipulator : XRSimpleInteractable
+public class ObjectManipulatorInteractable : XRSimpleInteractable
 {
+    [Header("Object Manipulator")]
     /// <summary>
     /// Enables the ability to autorotate once drag ends based on the drag speed
     /// </summary>

@@ -24,7 +24,7 @@ public class EarthPositionLocator : MonoBehaviour
         float _lon = Mathf.Clamp(lon, -180.0f, 180.0f) * Mathf.Deg2Rad;
 
 
-        pointPrefab.transform.position = new Vector3(
+        pointPrefab.transform.localPosition = new Vector3(
                 radius * Mathf.Sin(_lon) * Mathf.Cos(_lat),
                 radius * Mathf.Sin(_lat),
                 radius * Mathf.Cos(_lat) * Mathf.Cos(_lon)
