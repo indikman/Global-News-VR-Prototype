@@ -25,7 +25,7 @@ Material:
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 2
-  m_EnableInstancingVariants: 0
+  m_EnableInstancingVariants: 1
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
@@ -57,6 +57,7 @@ Material:
     m_Floats:
     - _QueueControl: 0
     - _QueueOffset: 0
+    - _x_Offset: 0
     m_Colors:
     - _FrenelColor: {r: 0, g: 2.2941568, b: 10.432951, a: 1}
     - _MainColor: {r: 0, g: 0.23174484, b: 0.9221513, a: 1}
