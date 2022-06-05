@@ -14,8 +14,7 @@ public class NewsItemsTest : MonoBehaviour
     {
         foreach (var newsitem in newsItems)
         {
-            GameObject item = Instantiate(newsItemPrefab);
-            item.transform.SetParent(targetSphere);
+            GameObject item = Instantiate(newsItemPrefab, targetSphere);
             item.GetComponent<EarthPositionLocator>().SetPosition(newsitem.lat, newsitem.lon);
 
             GameObject tooltip = Instantiate(tooltipPrefab);

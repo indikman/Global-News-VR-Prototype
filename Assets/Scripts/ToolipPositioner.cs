@@ -10,7 +10,7 @@ public class ToolipPositioner : MonoBehaviour
 
     Vector3 directionVec;
 
-    public void SetTooltip(Transform _tooltipRef, Vector3 _offset=default(Vector3), float _offsetLength=0.1f)
+    public void SetTooltip(Transform _tooltipRef, Vector3 _offset=default(Vector3), float _offsetLength=0.05f)
     {
         tooltipRef = _tooltipRef;
         offsetLength = _offsetLength;
